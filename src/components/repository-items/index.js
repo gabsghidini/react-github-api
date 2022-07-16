@@ -7,7 +7,7 @@ function RepositoryItem({ name, linkToRepo, fullName }) {
       <h2>Repository: {name}</h2>
       <br />
       <h4>Full Repository Name:</h4>
-      <a href={linkToRepo} target="_blank" rel="noreferrer">
+      <a href={linkToRepo} target="_blank" rel="noreferrer noopener">
         {fullName}
       </a>
     </S.Wrapper>

@@ -19,7 +19,7 @@ const Profile = () => {
             <a
               href={githubState.user.html_url || 'https://strangerthings.fandom.com/wiki/Suzie_Bingham'}
               target="_blank"
-              rel="noreferrer"
+              rel="noreferrer noopener"
             >
               {githubState.user.login || 'SuzieBingham'}
             </a>
@@ -34,7 +34,7 @@ const Profile = () => {
           </S.WrapperUserGeneric>
           <S.WrapperUserGeneric>
             <h3>Blog:</h3>
-            <a href={githubState.user.blog || 'https://strangerthings.fandom.com/wiki/Suzie_Bingham'} target="_blank" rel="noreferrer">
+            <a href={githubState.user.blog || 'https://strangerthings.fandom.com/wiki/Suzie_Bingham'} target="_blank" rel="noreferrer noopener">
               {githubState.user.blog || 'Stranger Things'}
             </a>
           </S.WrapperUserGeneric>
