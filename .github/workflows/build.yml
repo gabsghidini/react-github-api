@@ -12,12 +12,8 @@ jobs:
       matrix:
         node-version: [16.16.0]
     steps:
-      - name: Checkout
       - uses: actions/checkout@v1
-
-      - name: Install and Build
-        run: npm install && npm run build
-      
+      - run: npm install && npm run build
       - name: Deploy to gh-pages
       - uses: JamesIves/github-pages-deploy-action@v4
         with:
